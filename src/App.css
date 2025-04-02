@@ -1,38 +1,73 @@
 .App {
-  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqNd_PHoqrfFBdmu77Nu4uFLF0_WWF52xXBLYJk5VFNB5TnbYkn_UK-JCzjf2Y02hJL6k01jiDrk3et-Y3GKuw8eT75m8eliduzoMWt411L3mX5cGmIb8ZxbzJKX3hWMChfdB3zLyjiND9GjH5s0JcPJ3pCE2-zwzX1w2sl9OtBpB6TVARq8MQrfdIXw/s1600/Civa%201.JPG'); /* URL de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bus-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: rgba(50, 69, 135, 0.8); 
+  color: azure;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bus-table th, .bus-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bus-table th {
+  background-color: rgba(137, 68, 147, 0.9); 
+}
+
+.bus-table tr:hover {
+  background-color: rgba(245, 245, 245, 0.8);
+  color:darkblue;
+  cursor: pointer;
+}
+
+.pagination {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: rgba(0, 123, 255, 0.7); 
+  border: none;
   color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination button:hover {
+  background-color: rgba(0, 123, 255, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination span{
+color:aqua;
+font-weight: bolder;
+font-size: x-large;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+}
+
+
+h1{
+  color: violet;
 }
