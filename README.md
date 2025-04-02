@@ -32,11 +32,11 @@ Tipado estático con TypeScript
 
 Manejo de estados con useState
 
-Requisitos del Sistema ⚙️
+Requisitos del Sistema 
 Java 17+
 
 Node.js 18+
 
 MySQL 8.0+
 
-Maven 3.8+
+RECT18+
